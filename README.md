@@ -1,6 +1,6 @@
 # Echarts大屏数据可视化展示
 - Echarts大屏数据可视化展示
-- 项目预览地址: 
+- 项目预览地址:  https://zhaofangnb.github.io/echarts-demo/
 
 
 ## Echarts介绍

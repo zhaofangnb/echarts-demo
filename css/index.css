@@ -1,8 +1,9 @@
 /* css 初始化 */
-* {
+
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100%;
 }
 li {
   list-style: none;
@@ -14,9 +15,36 @@ li {
   font-weight: normal;
   font-style: normal;
 }
-body {
-  background: url(../images//bg.jpg) no-repeat top center;
-  line-height: 1.15;
+html {
+    background-image: url(../images//bg.jpg); /* 设置背景图片 */
+    background-position: center;  /* 设置背景图片居中 */
+    background-repeat: no-repeat; /* 设置背景图片不重复 */
+    background-size: cover;  /* 确保背景图片覆盖整个容器，但同时保证图片不会失真*/
+    background-attachment: fixed;  /* 设置背景图片固定，意味着它不会随着内容滚动 */
+    /* background: url(../images//bg.jpg) no-repeat top center; */
+    line-height: 1.15;
+    height: 100%; /* 确保元素高度为100% */
+    width: 100%; /* 确保元素宽度为100% */
+    background-size: 100% 100%;
+}
+/* 滚动条样式 */
+*::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    background: #bebcbc;
+}
+*::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
 }
 header {
   position: relative;
